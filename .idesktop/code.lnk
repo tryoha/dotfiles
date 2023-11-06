@@ -1,0 +1,10 @@
+table Icon
+  Caption: Code
+  Command: code
+  Icon: /usr/share/pixmaps/vscode.png
+  Width: 48
+  Height: 48
+  X: 409
+  Y: 79
+end
+

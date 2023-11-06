@@ -1,0 +1,10 @@
+table Icon
+  Caption: PDF
+  Command: qpdfview
+  Icon: /usr/share/icons/Vibrancy-Colors/apps/48/qpdfview.png
+  Width: 48
+  Height: 48
+  X: 29
+  Y: 769
+end
+

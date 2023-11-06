@@ -1,0 +1,36 @@
+conky.config = {
+    own_window_argb_visual = true,
+    own_window_argb_value = 50,
+    double_buffer = true,
+    own_window_type = "desktop",
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    alignment = 'top_right',
+    background = true,
+    border_width = 1,
+    cpu_avg_samples = 2,
+    default_color = 'white',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    draw_borders = false,
+    draw_graph_borders = false,
+    draw_outline = false,
+    draw_shades = false,
+    update_interval = 1,
+    total_run_times = 0,
+    use_spacer = 'none',
+    out_to_console = false,
+    out_to_stderr = false,
+    extra_newline = false,
+    alignment = 'tl',
+    use_xft = true,
+    text_buffer_size=32768,
+    font = 'Liberation Sans:size=10',
+    gap_x = 200,
+    gap_y = 5,
+
+
+};
+
+conky.text = [[
+     ${alignr 30}Uptime: ${uptime_short}     •  CPU: ${cpu cpu0}%     •  Memory: $memperc% ($mem)     GPU Temp : ${execi 5 nvidia-settings -query [gpu:0]/GPUCoreTemp -t}°C     •  Root: ${fs_used_perc /}% (${fs_used /} / ${fs_size /})     •  Home: ${fs_used_perc /mnt/data/}% (${fs_used /mnt/data/} / ${fs_size /mnt/data/})     •  Projects: ${fs_used_perc /mnt/projects/}% (${fs_used /mnt/projects/} / ${fs_size /mnt/projects/})    •  Work: ${fs_used_perc /mnt/work/}% (${fs_used /mnt/work/} / ${fs_size /mnt/work/})     ${if_up enp0s31f6}•  Net: ${upspeed enp0s31f6} (${totalup enp0s31f6}) / ${downspeed enp0s31f6} (${totaldown enp0s31f6})${endif}
+]];

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="Openbox 3">
+
+  <item label="Интернет">
+    <action name="Execute"><execute>x-www-browser</execute></action>
+  </item>
+
+  <item label="Терминал">
+    <action name="Execute"><execute>x-terminal-emulator</execute></action>
+  </item>
+  <item label="Проводник">
+    <action name="Execute"><execute>pcmanfm</execute></action>
+  </item>
+  <!-- This requires the presence of the 'obamenu' package to work 
+  <menu id="/Debian" /> -->
+  <separator />
+  <menu id="applications-menu" label="Приложения" execute="/usr/bin/obamenu"/>
+  <separator />
+  <item label="Перезагрузка">
+	<action name="Execute">
+        <command>systemctl reboot</command>
+	</action>
+  </item>
+  <item label="Выключение">
+	<action name="Execute">
+		<command>systemctl poweroff</command>
+	</action>
+  </item>
+
+</menu>
+
+
+</openbox_menu>

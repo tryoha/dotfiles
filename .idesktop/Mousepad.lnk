@@ -1,0 +1,10 @@
+table Icon
+  Caption: Блокнот
+  Command: mousepad
+  Icon: /usr/share/icons/Vibrancy-Colors/apps/48/text-editor.png
+  Width: 48
+  Height: 48
+  X: 29
+  Y: 479
+end
+

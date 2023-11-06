@@ -1,0 +1,10 @@
+table Icon
+  Caption: qBittorrent
+  Command: qbittorrent
+  Icon: /usr/share/icons/Vibrancy-Colors/apps/48/qbittorrent.png
+  Width: 48
+  Height: 48
+  X: 29
+  Y: 399
+end
+

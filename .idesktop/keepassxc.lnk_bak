@@ -1,0 +1,10 @@
+table Icon
+  Caption: KeePass
+  Command: keepassxc
+  Icon: /usr/share/icons/Vibrancy-Colors/apps/48/keepass.png
+  Width: 48
+  Height: 48
+  X: 1819
+  Y: 499
+end
+

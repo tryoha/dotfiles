@@ -1,0 +1,10 @@
+table Icon
+  Caption: PyCharm
+  Command: /opt/pycharm-community-2023.2.3/bin/pycharm.sh
+  Icon: /opt/pycharm-community-2023.2.3/bin/pycharm.png
+  Width: 48
+  Height: 48
+  X: 479
+  Y: 79
+end
+

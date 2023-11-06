@@ -1,0 +1,10 @@
+table Icon
+  Caption: Word
+  Command: libreoffice --writer 
+  Icon: /usr/share/icons/Vibrancy-Colors/apps/48/libreoffice3-writer.png
+  Width: 48
+  Height: 48
+  X: 29
+  Y: 229
+end
+
