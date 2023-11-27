@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [[ $1 = "on" ]]; then
+    sudo systemctl start nginx.service && \
+    sudo systemctl start php8.2-fpm.service && \
+    sudo systemctl start postgresql.service && \
+    sudo systemctl start mariadb.service && \
+    sudo systemctl start docker.service && \
+    sudo systemctl start fail2ban.service
+    
+elif [[ $1 = "off" ]]; then
+    sudo systemctl stop nginx.service && \
+    sudo systemctl stop php8.2-fpm.service && \
+    sudo systemctl stop postgresql.service && \
+    sudo systemctl stop mariadb.service && \
+    sudo systemctl stop fail2ban.service && \
+    sudo systemctl stop docker.service
+
+else
+     echo "Не введены параметры!" 
+     echo "web on - включаем lemp+"
+     echo "web off - выключаем lemp+"
+fi
