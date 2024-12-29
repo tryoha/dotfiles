@@ -72,6 +72,6 @@ URxvt*iconFile:  /usr/share/icons/Vibrancy-Colors/apps/48/Etermutilities-termina
 URxvt.iso14755: False
 URxvt.keysym.Control-C: perl:clipboard:copy
 URxvt.keysym.Control-V: perl:clipboard:paste
-URxvt*vt100.geometry: 110x40
-URxvt.geometry:         110x40
+URxvt*vt100.geometry: 130x44
+URxvt.geometry:         130x44
 URxvt.clipboard.autocopy: true

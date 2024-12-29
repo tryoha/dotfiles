@@ -1,0 +1,10 @@
+table Icon
+  Caption: Postman
+  Command: /home/barmazon/.local/share/Postman/app/postman
+  Icon: /home/barmazon/.local/share/Postman/app/icons/icon_128x128.png
+  Width: 48
+  Height: 48
+  X: 1859
+  Y: 649
+end
+

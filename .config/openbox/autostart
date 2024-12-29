@@ -16,9 +16,9 @@
 #
 #xfce-mcs-manager &
 tint2 &
-nm-applet &
+#nm-applet &
 gxkb &
-volumeicon &
 feh --bg-scale /home/barmazon/Изображения/Wallpapers/debian_2-wallpaper-1920x1080.jpg &
 idesk &
 (sleep 1s && conky) &
+(sleep 1s && volumeicon) &

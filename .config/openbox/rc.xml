@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Zukitwo-tre</name>
+    <name>Zukitwo-ob</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -346,24 +346,28 @@
       <action name="Unmaximize"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-          <width>50%</width>
+        <width>50%</width>
       </action>
-      <action name="MoveToEdge"><direction>west</direction></action>
+      <action name="MoveToEdge">
+        <direction>west</direction>
+      </action>
     </keybind>
     <keybind key="W-Right">
       <action name="Unmaximize"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-          <width>50%</width>
+        <width>50%</width>
       </action>
-      <action name="MoveToEdge"><direction>east</direction></action>
+      <action name="MoveToEdge">
+        <direction>east</direction>
+      </action>
     </keybind>
     <keybind key="W-Down">
       <action name="Unmaximize"/>
     </keybind>
     <keybind key="W-Up">
       <action name="Maximize"/>
-    </keybind>    
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -822,23 +826,23 @@
   # end of the example
 -->
     <application class="Firefox">
-        <decor>no</decor>
-        <maximized>true</maximized>
+      <decor>no</decor>
+      <maximized>true</maximized>
     </application>
     <application class="Gsimplecal">
-        <focus>yes</focus>
-        <position force="yes">
-            <x>-0</x>
-            <y>-0</y>
-        </position>
-        <decor>no</decor>
-        <shade>no</shade>
-        <layer>above</layer>
-        <iconic>no</iconic>
-        <skip_pager>yes</skip_pager>
-        <skip_taskbar>yes</skip_taskbar>
-        <fullscreen>no</fullscreen>
-        <maximized>no</maximized>
+      <focus>yes</focus>
+      <position force="yes">
+        <x>-0</x>
+        <y>-0</y>
+      </position>
+      <decor>no</decor>
+      <shade>no</shade>
+      <layer>above</layer>
+      <iconic>no</iconic>
+      <skip_pager>yes</skip_pager>
+      <skip_taskbar>yes</skip_taskbar>
+      <fullscreen>no</fullscreen>
+      <maximized>no</maximized>
     </application>
     <application class="*">
       <focus>yes</focus>
