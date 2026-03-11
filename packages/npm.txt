@@ -1,0 +1,6 @@
+prettier
+typescript
+typescript-language-server
+@vue/language-server
+intelephense
+tree-sitter-cli
