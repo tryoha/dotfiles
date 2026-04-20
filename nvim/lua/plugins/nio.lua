@@ -1,4 +1,4 @@
 return {
   "nvim-neotest/nvim-nio",
-  lazy = false,
+  lazy = vim.g.bootstrap,
 }

@@ -112,8 +112,11 @@ if command -v fdfind >/dev/null 2>&1; then
 fi
 
 echo "[extra] install plugins and parsers"
-nvim --headless "+Lazy! sync" +qa
-nvim --headless "+TSUpdateSync" +qa || true
+if [ -f "${NVIM_CONFIG_DIR}/lazy-lock.json" ]; then
+  NVIM_BOOTSTRAP=1 nvim --headless "+Lazy! restore" +qa
+else
+  NVIM_BOOTSTRAP=1 nvim --headless "+Lazy! install" +qa
+fi
 
 append_if_missing 'alias vim="nvim"' "${BASH_ALIASES}"
 

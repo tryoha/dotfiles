@@ -1,7 +1,7 @@
 return {
   "linux-cultist/venv-selector.nvim",
   dependencies = { "nvim-telescope/telescope.nvim" },
-  lazy = false,
+  lazy = vim.g.bootstrap,
   config = function()
     require("venv-selector").setup({
       -- минимальный конфиг без спорных ключей

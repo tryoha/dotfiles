@@ -1,6 +1,6 @@
 return {
   "stevearc/conform.nvim",
-  lazy = false,
+  lazy = vim.g.bootstrap,
   config = function()
     local conform = require("conform")
 
